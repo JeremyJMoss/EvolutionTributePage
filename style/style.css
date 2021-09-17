@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+body {
+  background-color: #eee;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -43,11 +47,12 @@ header h1 span {
 }
 
 .image-slider-container {
-  width: 1000px;
-  height: 562px;
+  width: 65vw;
+  height: 35vw;
   margin-inline: auto;
   position: relative;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .slide {
@@ -67,47 +72,47 @@ header h1 span {
 /*background images*/
 .slide:first-child {
   background-image: url(../evo2.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .slide:nth-child(2) {
   background-image: url(../evo3.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .slide:nth-child(3) {
   background-image: url(../evo4.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .slide:nth-child(4) {
   background-image: url(../evo5.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .slide:nth-child(5) {
   background-image: url(../evo6.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .slide:nth-child(6) {
   background-image: url(../evo7.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .slide:nth-child(7) {
   background-image: url(../evo8.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .slide:nth-child(8) {
   background-image: url(../evo9.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .slide:nth-child(9) {
   background-image: url(../evox.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 .information {
@@ -122,7 +127,7 @@ header h1 span {
 
 .information ul li {
   padding-block: 10px;
-  font-size: 1.15rem;
+  font-size: 1rem;
   letter-spacing: 0.05rem;
   line-height: 1.3rem;
   font-family: "Roboto", sans-serif;
@@ -131,6 +136,7 @@ header h1 span {
 .information ul li span {
   color: red;
   font-size: 1.25rem;
+  display: block;
 }
 
 .information ul li p {
@@ -138,7 +144,7 @@ header h1 span {
 }
 
 .add-info {
-  margin-inline: 30px;
+  margin-inline: 6rem;
   margin-block: 20px 40px;
 }
 
@@ -151,6 +157,90 @@ header h1 span {
 
 .add-info p {
   font-size: 1.3rem;
-  text-indent: 3rem;
-  text-align: center;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05rem;
+  line-height: 1.3rem;
+}
+
+@media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header img {
+    width: 6rem;
+    height: 4rem;
+  }
+
+  .link-container {
+    width: 6rem;
+  }
+
+  .link-container a {
+    padding: 8px 10px 8px 10px;
+    font-size: 0.75rem;
+  }
+
+  .information ul li span {
+    font-size: 1.2rem;
+    line-height: 0rem;
+  }
+
+  .information ul li {
+    font-size: 0.8rem;
+    padding-block: 5px;
+  }
+
+  .add-info h2 {
+    font-size: 2rem;
+  }
+
+  .add-info p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .information ul {
+    width: 80%;
+  }
+
+  .information ul li span {
+    font-size: 0.9rem;
+  }
+
+  .information ul li {
+    font-size: 0.7rem;
+  }
+
+  .add-info {
+    margin-inline: 2rem;
+  }
+
+  .add-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .add-info p {
+    font-size: 0.8rem;
+  }
+
+  .image-slider-container {
+    width: 90vw;
+    height: 50vw;
+  }
+
+  .link-container {
+    width: 5rem;
+  }
+
+  .link-container a {
+    padding: 4px 5px 4px 5px;
+    font-size: 0.6rem;
+  }
 }
